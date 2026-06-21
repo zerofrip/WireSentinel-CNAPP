@@ -1,0 +1,25 @@
+[package]
+name = "cnapp-sdk"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+cnapp-core = { workspace = true }
+shared-types = { workspace = true }
+cspm = { workspace = true }
+cwpp = { workspace = true }
+kubernetes = { workspace = true }
+containers = { workspace = true }
+iac = { workspace = true }
+secrets = { workspace = true }
+supply-chain = { workspace = true }
+sbom = { workspace = true }
+vulnerabilities = { workspace = true }
+attack-path = { workspace = true }
+compliance = { workspace = true }
+analytics = { workspace = true }
+uuid = { workspace = true }
+chrono = { workspace = true }
+parking_lot = { workspace = true }
+serde_json = { workspace = true }
