@@ -1,0 +1,22 @@
+[package]
+name = "cnapp-integration-tests"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+cnapp-sdk = { package = "cnapp-sdk", path = "../sdk" }
+cnapp-controller = { package = "cnapp-controller", path = "../controller" }
+shared-types = { workspace = true }
+uuid = { workspace = true }
+chrono = { workspace = true }
+serde_json = { workspace = true }
+
+[[test]]
+name = "platform_integration"
+path = "tests/platform_integration.rs"
+
+[[test]]
+name = "scan_to_compliance"
+path = "tests/scan_to_compliance.rs"
