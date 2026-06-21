@@ -13,17 +13,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          path: WireSentinel-CNAPP
 
       - name: Checkout WireSentinel (shared-types)
         uses: actions/checkout@v4
         with:
-          repository: WireSentinel/WireSentinel
+          repository: zerofrip/WireSentinel
           path: WireSentinel
 
       - name: Checkout WireSentinel-XDR (attack-graph)
         uses: actions/checkout@v4
         with:
-          repository: WireSentinel/WireSentinel-XDR
+          repository: zerofrip/WireSentinel-XDR
           path: WireSentinel-XDR
 
       - uses: dtolnay/rust-toolchain@stable
