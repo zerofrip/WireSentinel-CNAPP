@@ -1,0 +1,58 @@
+[workspace]
+resolver = "2"
+members = [
+    "cnapp-core",
+    "cspm",
+    "cwpp",
+    "kubernetes",
+    "containers",
+    "iac",
+    "secrets",
+    "supply-chain",
+    "sbom",
+    "vulnerabilities",
+    "attack-path",
+    "compliance",
+    "analytics",
+    "sdk",
+    "controller",
+    "tests",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+authors = ["WireSentinel Contributors"]
+repository = "https://github.com/WireSentinel/WireSentinel-CNAPP"
+
+[workspace.dependencies]
+tokio = { version = "1", features = ["full"] }
+async-trait = "0.1"
+uuid = { version = "1", features = ["v4", "serde"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tracing = "0.1"
+parking_lot = "0.12"
+chrono = { version = "0.4", features = ["serde"] }
+anyhow = "1"
+thiserror = "2"
+regex = "1"
+
+shared-types = { path = "../WireSentinel/shared-types" }
+attack-graph = { path = "../WireSentinel-XDR/attack-graph" }
+cnapp-core = { path = "cnapp-core" }
+cspm = { path = "cspm" }
+cwpp = { path = "cwpp" }
+kubernetes = { path = "kubernetes" }
+containers = { path = "containers" }
+iac = { path = "iac" }
+secrets = { path = "secrets" }
+supply-chain = { path = "supply-chain" }
+sbom = { path = "sbom" }
+vulnerabilities = { path = "vulnerabilities" }
+attack-path = { path = "attack-path" }
+compliance = { path = "compliance" }
+analytics = { path = "analytics" }
+cnapp-sdk = { path = "sdk" }
+cnapp-controller = { path = "controller" }
