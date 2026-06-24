@@ -21,3 +21,7 @@ Cloud-Native Application Protection Platform (CNAPP) for the WireSentinel ecosys
 ```bash
 cargo test --workspace
 ```
+
+## License
+
+Apache-2.0. See [LICENSE](LICENSE).
